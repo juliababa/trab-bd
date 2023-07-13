@@ -1,8 +1,8 @@
 import mysql.connector
 cnx = mysql.connector.connect(
     host='localhost',
-    user='root',
-    password='B@ba8474',
+    user='escrever_seu_usuario',
+    password='escrever_sua_senha',
     database='mydb'
 )
 
@@ -13,8 +13,3 @@ def commit():
 
 def close():
     cnx.close()
-
-# cursor.execute("SELECT * FROM departamento")
-# rows = cursor.fetchall()
-# for row in rows:
-#     print(row)
