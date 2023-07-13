@@ -5,7 +5,8 @@ import actions_menu
 import session
 
 if __name__ == '__main__':
-    print(session.user)
+    get_connector.cursor.execute("SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));")
+    # get_connector.commit()
     while not session.user:
         print("======================== Menu ==========================")
         print("[1] Criar Conta")
@@ -15,10 +16,11 @@ if __name__ == '__main__':
 
         if codigo == 1:
             create_user.render_interface()
-        else:
+        elif codigo == 2:
             login.render_interface()
             if not session.user:
                 print("Senha ou Matricula incorretos")
+        
     
     exit = False
     while not exit:

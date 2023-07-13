@@ -5,6 +5,8 @@ import list_evaluate_class
 import list_evaluate_teacher
 import class_complaint_list
 import teacher_complaint_list
+import user_evaluate_class
+import user_evaluate_teacher
 import session
 
 def render_interface():
@@ -15,8 +17,10 @@ def render_interface():
         3: evaluate_teacher.render_interface,
         4: list_evaluate_class.render_interface,
         5: list_evaluate_teacher.render_interface,
-        6: class_complaint_list.render_interface,
-        7: teacher_complaint_list.render_interface,
+        6: user_evaluate_class.render_interface,
+        7: user_evaluate_teacher.render_interface,
+        8: class_complaint_list.render_interface,
+        9: teacher_complaint_list.render_interface,
     }
 
     options = [
@@ -24,7 +28,9 @@ def render_interface():
         "Avaliar Turma",
         "Avaliar Professor",
         "Visualizar Avaliacoes de Turmas",
-        "Visualizar Avaliacoes de Professores"
+        "Visualizar Avaliacoes de Professores",
+        "Minhas Avaliacoes de Turmas",
+        "Minhas Avaliacoes de Professores"
     ]
 
     if is_admin:

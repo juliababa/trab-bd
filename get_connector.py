@@ -6,7 +6,7 @@ cnx = mysql.connector.connect(
     database='mydb'
 )
 
-cursor = cnx.cursor()
+cursor = cnx.cursor(buffered=True)
 
 def commit():
     cnx.commit()

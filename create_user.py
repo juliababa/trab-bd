@@ -14,7 +14,7 @@ def render_interface():
     senha = input("Senha: ")
     curso = input("Curso: ")
     cargo = get_cargo(int(input("Cargo [0]Aluno [1]Administrador: ")))
-    query = "INSERT INTO Estudante VALUES (%s, %s, %s, %s, %s, %s)"
+    query = "CALL CreateStudentWithTurmas(5, %s, %s, %s, %s, %s, %s)"
     values = (matricula, senha, email, curso, cargo, nome)
     get_connector.cursor.execute(query, values)
     if get_connector.cursor.rowcount > 0:

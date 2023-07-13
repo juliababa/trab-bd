@@ -9,7 +9,7 @@ def render_interface():
 
     get_connector.cursor.execute(query)
     avaliacoes = get_connector.cursor.fetchall()
-    print("===================== Avalicoes de Professores =======================")
+    print("===================== Avaliacoes de Professores =======================")
     if not avaliacoes:
         print("Nenhuma avalicao cadastrada")
         return

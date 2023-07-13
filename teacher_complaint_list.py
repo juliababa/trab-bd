@@ -8,7 +8,7 @@ def render_interface():
 
     get_connector.cursor.execute(query)
     denuncias = get_connector.cursor.fetchall()
-    print("===================== Denuncias de Avalicoes de Professores =======================")
+    print("===================== Denuncias de Avaliacoes de Professores =======================")
     if not denuncias:
         print("Nenhuma denuncia a ser avaliada")
         return
