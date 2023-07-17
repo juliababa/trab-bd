@@ -299,14 +299,14 @@ def create_report(report: Report):
 @app.get("/reports")
 def list_reports():
     check_logged()
-    query_teacher_reports = """SELECT av.cod, av.comentario, dp.motivo, e.nome estudante, e.imagem, e.matricula, p.nome, dp.FK_COD_AVAL_PROF cod_denuncia
+    query_teacher_reports = """SELECT av.cod, av.comentario, dp.motivo, e.nome estudante, e.imagem, e.matricula, p.nome, dp.FK_COD_AVAL_PROF cod_denuncia, p.cod outro_cod
         FROM denuncia_professor dp
         JOIN avaliacao_professor av on av.cod = dp.FK_COD_AVAL_PROF
         JOIN professor p on p.cod = av.FK_COD_PROF
         JOIN estudante e on e.matricula = av.FK_MATRICULA_ESTD
         WHERE status = %s"""
     
-    query_class_reports = """SELECT av.cod, av.comentario, dt.motivo, e.nome estudante, e.imagem, e.matricula, d.nome, dt.FK_COD_AVAL_TURMA cod_denuncia
+    query_class_reports = """SELECT av.cod, av.comentario, dt.motivo, e.nome estudante, e.imagem, e.matricula, d.nome, dt.FK_COD_AVAL_TURMA cod_denuncia, t.cod outro_cod
         FROM denuncia_turma dt
         JOIN avaliacao_turma av on av.cod = dt.FK_COD_AVAL_TURMA
         JOIN turma t on t.cod = av.FK_COD_TURMA

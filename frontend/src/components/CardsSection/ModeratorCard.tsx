@@ -77,12 +77,13 @@ const ModeratorCard = () => {
               imagem,
               matricula,
               cod_denuncia,
+              outro_cod,
             }) => (
               <CardEvaluation
                 userProfilePicture={imagem}
                 nomeStudent={estudante}
                 nome={nome}
-                cod={cod}
+                cod={outro_cod}
                 cod_avaliacao={cod}
                 cod_denuncia={cod_denuncia}
                 textComment={comentario}
