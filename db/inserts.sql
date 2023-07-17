@@ -1,25 +1,27 @@
+USE `mydb`;
+
 INSERT INTO DEPARTAMENTO(COD, Nome) VALUES(640, "CENTRO DE DESENVOLVIMENTO SUSTENTÁVEL");
 INSERT INTO DEPARTAMENTO(COD, Nome) VALUES(314, "CENTRO DE EXCELÊNCIA EM TURISMO");
 INSERT INTO DEPARTAMENTO(COD, Nome) VALUES(508, "DEPTO CIÊNCIAS DA COMPUTAÇÃO");
 INSERT INTO DEPARTAMENTO(COD, Nome) VALUES(443, "DEPTO ENGENHARIA ELETRICA");
 
-INSERT INTO estudante(Matricula, Senha, Email, Curso, Cargo, Nome)
-VALUES
-    ('190057921', 'password123', 'john.doe@example.com', 'Ciência da Computação', 'Aluno', 'John Doe'),
-    ('190065432', 'password456', 'jane.smith@example.com', 'Engenharia Elétrica', 'Aluno', 'Jane Smith'),
-    ('190073845', 'password789', 'david.johnson@example.com', 'Engenharia Mecânica', 'Aluno', 'David Johnson'),
-    ('200012345', 'passwordabc', 'sarah.davis@example.com', 'Engenharia Civil', 'Aluno', 'Sarah Davis'),
-    ('200023456', 'passworddef', 'michael.wilson@example.com', 'Engenharia Química', 'Aluno', 'Michael Wilson'),
-    ('210034567', 'passwordghi', 'emily.brown@example.com', 'Ciência da Computação', 'Aluno', 'Emily Brown'),
-    ('210045678', 'passwordjkl', 'daniel.taylor@example.com', 'Engenharia Elétrica', 'Aluno', 'Daniel Taylor'),
-    ('210056789', 'passwordmno', 'olivia.martinez@example.com', 'Engenharia Mecânica', 'Aluno', 'Olivia Martinez'),
-    ('220067890', 'passwordpqr', 'sophia.anderson@example.com', 'Engenharia Civil', 'Aluno', 'Sophia Anderson'),
-    ('220078901', 'passwordstu', 'william.clark@example.com', 'Engenharia Química', 'Aluno', 'William Clark'),
-    ('230089012', 'passwordvwx', 'emma.walker@example.com', 'Ciência da Computação', 'Aluno', 'Emma Walker'),
-    ('230090123', 'passwordyz1', 'liam.green@example.com', 'Engenharia Elétrica', 'Aluno', 'Liam Green'),
-    ('240101234', 'password234', 'ava.hall@example.com', 'Engenharia Mecânica', 'Administrador', 'Ava Hall'),
-    ('240112345', 'password567', 'noah.adams@example.com', 'Engenharia Civil', 'Administrador', 'Noah Adams'),
-    ('250123456', 'password890', 'mia.turner@example.com', 'Engenharia Química', 'Administrador', 'Mia Turner');
+-- INSERT INTO estudante(Matricula, Senha, Email, Curso, Cargo, Nome)
+-- VALUES
+--     ('190057921', 'password123', 'john.doe@example.com', 'Ciência da Computação', 'Aluno', 'John Doe'),
+--     ('190065432', 'password456', 'jane.smith@example.com', 'Engenharia Elétrica', 'Aluno', 'Jane Smith'),
+--     ('190073845', 'password789', 'david.johnson@example.com', 'Engenharia Mecânica', 'Aluno', 'David Johnson'),
+--     ('200012345', 'passwordabc', 'sarah.davis@example.com', 'Engenharia Civil', 'Aluno', 'Sarah Davis'),
+--     ('200023456', 'passworddef', 'michael.wilson@example.com', 'Engenharia Química', 'Aluno', 'Michael Wilson'),
+--     ('210034567', 'passwordghi', 'emily.brown@example.com', 'Ciência da Computação', 'Aluno', 'Emily Brown'),
+--     ('210045678', 'passwordjkl', 'daniel.taylor@example.com', 'Engenharia Elétrica', 'Aluno', 'Daniel Taylor'),
+--     ('210056789', 'passwordmno', 'olivia.martinez@example.com', 'Engenharia Mecânica', 'Aluno', 'Olivia Martinez'),
+--     ('220067890', 'passwordpqr', 'sophia.anderson@example.com', 'Engenharia Civil', 'Aluno', 'Sophia Anderson'),
+--     ('220078901', 'passwordstu', 'william.clark@example.com', 'Engenharia Química', 'Aluno', 'William Clark'),
+--     ('230089012', 'passwordvwx', 'emma.walker@example.com', 'Ciência da Computação', 'Aluno', 'Emma Walker'),
+--     ('230090123', 'passwordyz1', 'liam.green@example.com', 'Engenharia Elétrica', 'Aluno', 'Liam Green'),
+--     ('240101234', 'password234', 'ava.hall@example.com', 'Engenharia Mecânica', 'Administrador', 'Ava Hall'),
+--     ('240112345', 'password567', 'noah.adams@example.com', 'Engenharia Civil', 'Administrador', 'Noah Adams'),
+--     ('250123456', 'password890', 'mia.turner@example.com', 'Engenharia Química', 'Administrador', 'Mia Turner');
 
 INSERT INTO professor(Nome, FK_COD_DPTO)
 VALUES

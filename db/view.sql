@@ -1,3 +1,4 @@
+USE `mydb` ;
 SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
 CREATE VIEW vagas_ocupadas_disciplinas as

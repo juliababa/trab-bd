@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS `Estudante` (
   `Curso` VARCHAR(255) NOT NULL,
   `Cargo` VARCHAR(45) NOT NULL,
   `Nome` VARCHAR(255) NOT NULL,
+  `Imagem` LONGBLOB NOT NULL,
   PRIMARY KEY (`Matricula`));
 
 
